@@ -1,0 +1,27 @@
+version: 2.1
+
+executors:
+  node-executor:
+    docker:
+      - image: circleci/python:3.8
+    working_directory: ~/repo
+
+jobs:
+  test:
+    executor: node-executor
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            npm install
+      - run:
+          name: Run tests
+          command: |
+            npx jest
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
