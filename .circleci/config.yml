@@ -16,9 +16,9 @@ jobs:
           command: |
             npm install
       - run:
-          name: Run tests
+          name: Run tests with verbose output
           command: |
-            npx jest
+            npx jest --verbose
 
 workflows:
   version: 2
