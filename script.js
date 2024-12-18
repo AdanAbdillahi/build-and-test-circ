@@ -1,4 +1,4 @@
 document.getElementById('myButton').addEventListener('click', function() {
-    document.getElementById('outputText').innerText = 'Hello, CircleCI!';
+    document.getElementById('outputText').innerText = 'Thanks for clicking me!';
   });
   
