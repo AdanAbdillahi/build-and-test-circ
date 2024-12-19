@@ -24,6 +24,6 @@ test('button click changes text', () => {
     button.click();
 
     // Check if the text has changed
-    expect(outputText.innerText).toBe('Thanks for clicking me!');
+    expect(outputText.innerText).toBe('test should fail!');
   };
 });
