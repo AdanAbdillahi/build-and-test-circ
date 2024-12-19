@@ -1,14 +1,19 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CircleCI Assessment 1</title>
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Test</title>
 </head>
 <body>
-  <h1>Simple Web Application</h1>
-  <button id="myButton">Click me!</button>
-  <p id="outputText"></p>
+    <button id="myButton">Click me!</button>
+    <p id="outputText"></p>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('outputText').innerText = 'Thanks for clicking me!';
+        });
+    </script>
 </body>
 </html>
